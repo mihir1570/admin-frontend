@@ -1,0 +1,599 @@
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* ------------- // Admin Login Page CSS //------------- */
+
+.login-page-container {}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  color: #1A73E8;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #1A73E8;
+  border: none;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #1B66C9;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: #1A73E8 !important;
+  box-shadow: none !important;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+}
+
+input {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  pointer-events: none;
+}
+
+input,
+.label .text {
+  width: 100%;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #1A73E8;
+}
+
+input:focus+.label .text {
+  font-size: 12px;
+  transform: translate(0, -50%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #1A73E8;
+}
+
+.label .text {
+  transition: all 0.15s ease-out;
+}
+
+input:focus+.label .text,
+:not(input[value=""])+.label .text {
+  font-size: 12px;
+  transform: translate(0, -120%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+input:focus+.label .text {
+  color: #1A73E8;
+}
+
+.showErrors {
+  height: 30px;
+  width: 100%;
+  padding-left: 3px;
+  font-size: small;
+}
+
+
+
+
+
+/* ---------Admin Dashboard--------- */
+body {
+  font-size: medium;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar .nav-link {
+  font-size: medium;
+  font-weight: 500;
+  color: #333;
+  transition: font-size 0.3s ease;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+  font-size: medium;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1.rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* admin pannel sidebar */
+.transparent-body {
+  background-color: transparent;
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: #000;
+}
+
+.nav-item.dashboard {
+  background-color: #5f9ea0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.nav-item.dashboard a {
+  color: #fff;
+}
+
+
+/* PDF text */
+.react-pdf__message {
+  visibility: hidden;
+}
+
+
+
+/* Card Layout */
+
+.dashboard-title {
+  padding-top: 10px;
+}
+
+.admin-card {
+  padding: 20px 20px 20px 20px;
+}
+
+.order-card {
+  color: #fff;
+}
+
+.bg-c-blue {
+  background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.bg-c-green {
+  background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.bg-c-yellow {
+  background: linear-gradient(45deg, #FFB64D, #ffcb80);
+}
+
+.bg-c-pink {
+  background: linear-gradient(45deg, #FF5370, #ff869a);
+}
+
+.bg-c-black {
+  background: linear-gradient(45deg, #424242, #616161);
+}
+
+.bg-c-grey {
+  background: linear-gradient(45deg, #9E9E9E, #BDBDBD);
+}
+
+.bg-c-blue-grey {
+  background: linear-gradient(45deg, #607D8B, #90A4AE);
+}
+
+.bg-c-brown {
+  background: linear-gradient(45deg, #795548, #A1887F);
+}
+
+.bg-c-deep-purple {
+  background: linear-gradient(45deg, #673AB7, #9575CD);
+}
+
+.bg-c-light-green {
+  background: linear-gradient(45deg, #8BC34A, #ACEE6C);
+}
+
+.bg-c-light-blue {
+  background: linear-gradient(45deg, #03A9F4, #67D3F5);
+}
+
+.bg-c-deep-orange {
+  background: linear-gradient(45deg, #FF7043, #FFB280);
+}
+
+.bg-c-amber {
+  background: linear-gradient(45deg, #FFCA28, #FFD780);
+}
+
+.bg-c-lime {
+  background: linear-gradient(45deg, #AEEB00, #DFFFAE);
+}
+
+.bg-c-indigo {
+  background: linear-gradient(45deg, #536DFE, #7C7DFD);
+}
+
+.bg-c-teal {
+  background: linear-gradient(45deg, #4DB6AC, #64D8CB);
+}
+
+.bg-c-cyan {
+  background: linear-gradient(45deg, #37D5D3, #4DC0C8);
+}
+
+.bg-c-red {
+  background: linear-gradient(45deg, #FF5370, #FF869A);
+}
+
+.bg-c-orange {
+  background: linear-gradient(45deg, #FF9F43, #FFC68A);
+}
+
+.bg-c-purple {
+  background: linear-gradient(45deg, #A78BFA, #C4B5FD);
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+  height: 180px;
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+/* Media query for email column Join our team  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn.btn-link {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .btn.btn-link {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btn.btn-link {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .btn.btn-link {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .btn.btn-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+  }
+}
+
+
+
+
+
+
+/* forgot password */
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.forgot-password-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 360px;
+  text-align: center;
+}
+
+.lock-icon {
+  font-size: 3em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.forgot-password-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.forgot-password-text {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.forgot-password-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.forgot-password-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.forgot-password-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  background-color: #45A049;
+}
+
+
+
+/* Admin Profile Custom card design css*/
+.custom-card {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+  /* Adjust margin-top as needed */
+  padding: 30px;
+  border-radius: 10px;
+  /* Adding border-radius for rounded corners */
+  background-color: #fff;
+  /* Setting background color to white */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Adding a subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Enhancing shadow properties */
+}
+
+.custom-card .MuiCardContent-root {
+  padding-top: 20px;
+  /* Adjusting padding-top to accommodate for border */
+}
+
+.custom-card .MuiTypography-h4 {
+  margin-bottom: 20px;
+  /* Adding margin bottom to the title */
+}
+
+.custom-card .MuiTypography-subtitle1 {
+  margin-bottom: 30px;
+  /* Adding margin bottom to the subtitle */
+}
+
+.custom-card form {
+  width: 100%;
+  /* Ensuring form takes full width */
+}
+
+.custom-card .MuiButton-root {
+  margin-top: 20px;
+  /* Adding margin top to the button */
+}
+
+.admin-profile {
+  padding-top: 100px;
+  /* Default padding for desktop and tablet */
+}
+
+@media (max-width: 991.98px) {
+
+  /* For tablet and below */
+  .admin-profile {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* For small devices */
+  .admin-profile {
+    padding-top: 0px;
+  }
+}
+
+
+
+/* Admin dashboard Graph CSS */
+.chart-container {
+  box-sizing: border-box;
+  display: block;
+  height: 66vh;
+  max-width: 100%;
+}
+
