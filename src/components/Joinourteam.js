@@ -142,9 +142,8 @@ const Joinourteam = () => {
 
     // Display resume pdf
     const showPdf = (pdf) => {
-        window.open(`${BASE_URL}/files/${pdf}`, "_blank", "noreferrer");
+        window.open(`http://localhost:4500/files/${pdf}`, "_blank", "noreferrer");
     };
-
 
     const columns = [
         {

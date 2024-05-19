@@ -25,7 +25,7 @@ const Cpartner = () => {
 
 
     const showCpartner = async () => {
-        const datas = await fetch("${BASE_URL}/showCpartners")
+        const datas = await fetch(`${BASE_URL}/showCpartners`)
         const results = await datas.json()
         if (results) {
             setShowCpartners(results)
