@@ -140,10 +140,12 @@ const Joinourteam = () => {
     };
 
 
-    // Display resume pdf
+    // Display resume pdf from backend
     const showPdf = (pdf) => {
+        // window.open(`http://localhost:4500/files/${pdf}`, "_blank", "noreferrer");
         window.open(`${BASE_URL}/files/${pdf}`, "_blank", "noreferrer");
     };
+
 
     const columns = [
         {
